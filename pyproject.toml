@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flo-customer-segmentation"
+version = "1.0.0"
+description = "RFM-based customer segmentation and campaign targeting for FLO"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0,<3.0",
+]
+
+[project.scripts]
+flo-segment = "flo_customer_segmentation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
