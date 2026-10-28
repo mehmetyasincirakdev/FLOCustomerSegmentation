@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Customer data and campaign exports, regardless of their location
+flo_data_20k.csv
+*hedef*müşteri*id*.csv
+*target*customer*ids.csv
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# Test and tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local data and customer-level exports
+/data/raw/*
+!/data/raw/.gitkeep
+/data/outputs/*
+!/data/outputs/.gitkeep
+
+# Local IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
